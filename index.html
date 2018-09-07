@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Prototype</title>
+    <!-- DatePicker CSS -->
+    <link rel="stylesheet" href="css/datePicker.css" />
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- FontAwesome Fonts -->
+    <link rel="stylesheet" href="css/font-awesome.all.min.css" />
+    <!-- FontAwesome Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu" />
+    <!-- FontAwesome JavaScript -->
+    <script defer src="js/font-awesome.all.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Prototype</a>
+            </div>
+            <!-- Top Menu Items -->
+            <div class="nav-menu-items row">
+                <ul class="nav top-nav navbar-left">
+                    <div class="nav-search">
+                        <input type="text" placeholder="Search in Dashboard">
+                        <i class="fas fa-search nav-fa-search"></i>
+                    </div>
+                </ul>
+                <ul class="nav top-nav navbar-right">
+                    <li class="nav-guides">
+                        <i class="fas fa-exclamation-circle nav-fa-exclamation"></i>
+                        <span> Guides</span>
+                    </li>
+                    <li class="nav-logout">
+                        <i class="fas fa-chevron-circle-left nav-fa-chevron"></i>
+                        <span>Logout</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li class="activated nav-Carrefour">
+                        <a href="#">
+                            <div>
+                                <span class="for">for</span>
+                                <img src="img\carrefour-logo-vector.png" />
+                                <span class="Carrefour"> Carrefour
+                                </span>
+                                <i class="fas fa-angle-down nav-fa-carrefour"></i>
+                                <span class="stores">Stores</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="manager-img" src="img/campaign.png" />
+                            <span class="nav-span">Campaign Manager</span>
+                            <i class="fas fa-angle-down nav-fa-manager"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-volume-up nav-fa"></i>
+                            <span class="nav-span">Points Management</span>
+                            <i class="fas fa-angle-down nav-fa-management"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-newspaper nav-fa"></i>
+                            <span class="nav-span ">Products</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-building nav-fa"></i>
+                            <span class="nav-span buildings-span"> Buildings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-copy nav-fa"></i>
+                            <span class="nav-span organizations-span"> Organizations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-file-download nav-fa"></i>
+                            <span class="nav-span categories-span">Categories</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-smile-beam nav-fa"></i>
+                            <span class="nav-span staff-span">Staff</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home nav-fa"></i>
+                            <span class="nav-span brands-span"> Brands</span>
+                        </a>
+                    </li>
+                    <li class="shops">
+                        <a href="#">
+                            <i class="fas fa-hashtag nav-fa nav-fa-shops"></i>
+                            <span class="nav-span shops-span">Shops </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-tv nav-fa"></i>
+                            <span class="nav-span products-span">Products Repository </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-desktop nav-fa"></i>
+                            <span class="nav-span beacons-span"> Beacons </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-book-open nav-fa"></i>
+                            <span class="nav-span news-span"> News </span>
+                            <span class="new">New</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-male nav-fa"></i>
+                            <span class="nav-span tags-span"> Tags </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-rocketchat nav-fa"></i>
+                            <span class="nav-span roles-span"> Roles</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-mobile-alt nav-fa"></i>
+                            <span class="nav-span app-span"> My Apps </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+        <!-- End Navigation -->
+
+        <div id="page-wrapper">
+            <!-- Start Page Heading -->
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row page-heading">
+                        <div class="col-xs-6 heading-manager1">
+                            <img class="heading-manager-img" src="img/campaign.png" />
+                            <div class="heading-manager-text">
+                                <span class="campaign-span">Campaign Manager</span>
+                                <span class="new-campaign-span">Create New Campaign</span>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 heading-manager2">
+                            <button type="button" class="btn">All Campaigns</button>
+                            <span class="fa-btn">
+                                <i class="fas fa-chevron-circle-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Page Heading -->
+
+            <!-- Start Progress Bar Section -->
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row steps">
+                        <div class="col-md-6 steps-text">
+                            <span class="steps-head">2 Steps</span>
+                            <span class="steps-description">You Can Create New Campaign in 2 Steps</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="progress-bar-steps">
+                                <div id="progress-bar-step1-img">
+                                    <img src="img/progress-bar-step-one.png" />
+                                </div>
+                                <div id="progress-bar-step2-img">
+                                    <img src="img/progress-bar-step-two.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Progress Bar Section -->
+
+                <!-- start form Section -->
+                <div class="container">
+                    <div id="form-section">
+                        <form id="step1-form" action="">
+                            <!-- Name -->
+                            <div class="row">
+                                <div class="col-xs-12 name-input">
+                                    <span class="name-span">Name</span>
+                                    <span class="name-span-desc">( Visible only to you )</span>
+                                    <span class="r">*</span>
+                                    <input id="nameInputForm" type="text" class="form-control" placeholder="Add Name" required/>
+                                </div>
+                            </div>
+                            <!-- Choose Brand -->
+                            <div class="row">
+                                <div class="col-xs-6 choose-brand">
+                                    <span class="choose-brand-span">Choose Place</span>
+                                    <span class="r">*</span>
+                                    <select id="brandInputForm" class="form-control" required>
+                                        <option value="" selected disabled>Brand</option>
+                                        <option value="Brand 1">Brand 1</option>
+                                        <option value="Brand 2">Brand 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6 choose-shop">
+                                    <select id="shopInputForm" class="form-control" required>
+                                        <option value="" selected disabled>Shop</option>
+                                        <option value="Shop 1">Shop 1</option>
+                                        <option value="Shop 1">Shop 1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Trigger -->
+                            <div class="row">
+                                <div class="col-xs-6 select-becons">
+                                    <span class="choose-brand-span">Trigger</span>
+                                    <span class="r">*</span>
+                                    <select id="beconsInputForm" class="form-control" required>
+                                        <option value="" selected disabled>Select Beacons</option>
+                                        <option value="Beacons 1">Beacons 1</option>
+                                        <option value="Beacons 2">Beacons 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6 OutSide">
+                                    <select id="outsideInputForm" class="form-control" required>
+                                        <option value="OutSide ( > 5 m )">OutSide ( > 5 m ) </option>
+                                        <option value="OutSide ( > 10 m )">OutSide ( > 10 m ) </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Profile -->
+                            <div class="row">
+                                <div class="col-xs-6 select-gender">
+                                    <span class="profile-span">Profile</span>
+                                    <span class="r">*</span>
+                                    <select id="genderInputForm" class="form-control" required>
+                                        <option value="" selected disabled>All Genders ( 2 )</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Male and Female">Male and Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6 select-age">
+                                    <select id="ageInputForm" class="form-control" required>
+                                        <option value="10-19 Years">10-19 Years</option>
+                                        <option value="19-30 Years">19-30 Years</option>
+                                        <option value="30-60 Years">30-60 Years</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Time Frime -->
+                            <div class="row">
+                                <div class="col-xs-6 select-time-frime">
+                                    <span class="time-frime-span">Time Frime</span>
+                                    <span class="r">*</span>
+                                    <select id="timeFrimeInputForm" class="form-control time-frime-dl" required>
+                                        <option value="" selected disabled>Select Time Frime</option>
+                                        <option value="Saturday from 2 PM to 10 PM">Saturday from 2 PM to 10 PM </option>
+                                        <option value="Friday from 8 AM to 6 PM">Friday from 8 AM to 6 PM</option>
+                                    </select>
+                                </div>
+                                <div class="col-xs-6 create-time-frime">
+                                    <button class="btn btn-default add-time-frime" type="button">+</button>
+                                    <span class="time-frime-decs">Create New Time Frime for this Campign +</span>
+                                </div>
+                            </div>
+                            <!-- Create New Time Frime -->
+                            <div class="create-new-time-frime">
+                                <div class="row">
+                                    <div class="col-xs-12 select-new-time-frime">
+                                        <button class="btn btn-default cancel-time-frime" type="button">x</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 schedule">
+                                        <span class="schedule-text">Schedule</span>
+                                        <select id="daysTimeFrimeInputForm" class="form-control schedule-dl" required>
+                                            <option value="Every Day">Every Day</option>
+                                            <option value="Saturday">Saturday</option>
+                                            <option value="Sunday">Sunday</option>
+                                            <option value="Monday">Monday</option>
+                                            <option value="Tuesday">Tuesday</option>
+                                            <option value="Wednesday">Wednesday</option>
+                                            <option value="Thursday">Thursday</option>
+                                            <option value="Friday">Friday</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-4 between">
+                                        <span class="between-text">Between:</span>
+                                        <input id="betweenTimeFrimeInputForm" type="text" name="between" class="form-control between" placeholder="9:00 PM" />
+                                    </div>
+                                    <div class="col-xs-4 and">
+                                        <span class="and-text">And:</span>
+                                        <input id="andTimeFrimeInputForm" type="text" name="and" class=" form-control and" placeholder="12:00 AM" />
+                                    </div>
+                                </div>
+                                <button class="btn btn-default save" type="button">Save</button>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!-- Compaign Start & End Times-->
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12 compaign-start-time">
+                                    <span class="compaign-start-time-span">Compaign Start & End Times</span>
+                                    <input id="startTimeInputForm" type="text" class="form-control start datepicker" placeholder="start" />
+                                    <div class="calendar">
+                                        <i class="far fa-calendar-alt "></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12 compaign-end-time">
+                                    <input id="endTimeInputForm" type="text" class="form-control end datepicker" placeholder="End" />
+                                    <div class="calendar">
+                                        <i class="far fa-calendar-alt "></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-default next">Next</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- End form Section -->
+
+                <!-- Start Finish Message -->
+                <div class="container">
+                    <div class="row">
+                        <p id="finishMessage">This is the result of your New Campaign</p>
+                    </div>
+                </div>
+                <!-- End Finish Message -->
+
+                <!-- Start Step 2 (Design) Section -->
+                <div class="container">
+                    <div id="design-section">
+                        <!-- Start Design row-->
+                        <div class="row">
+                            <div class="col-md-5 col-md-push-7">
+                                <div id="iphone-design">
+                                    <div id="iphone-design-container">
+                                        <img src="img/iphone.png" />
+                                        <div id="iphone-header"></div>
+                                        <div id="iphone-content">
+                                            <span id="iphone-content-1"></span>
+                                            <span id="iphone-content-2"></span>
+                                        </div>
+                                        <div id="iphone-product-1-container">
+                                            <div class="iphone-product">
+                                                <div class="item-price">
+                                                    <div id="item-preview-1">
+                                                        <img id="Product-img1" src="" />
+                                                    </div>
+                                                    <span id="salary-1"></span>
+                                                </div>
+                                            </div>
+                                            <span id="product-name-1"></span>
+                                        </div>
+                                        <div id="iphone-product-2-container">
+                                            <div class="iphone-product">
+                                                <div class="item-price">
+                                                    <div id="item-preview-2">
+                                                        <img id="Product-img2" src="" />
+                                                    </div>
+                                                    <span id="salary-2"></span>
+                                                </div>
+                                            </div>
+                                            <span id="product-name-2"></span>
+                                        </div>
+                                        <div id="iphone-product-3-container">
+                                            <div class="iphone-product">
+                                                <div class="item-price">
+                                                    <div id="item-preview-3">
+                                                        <img id="Product-img3" src="" />
+                                                    </div>
+                                                    <span id="salary-3"></span>
+                                                </div>
+                                            </div>
+                                            <span id="product-name-3"></span>
+                                        </div>
+                                        <div id="iphone-buttons-container">
+                                            <div class="iphone-buttons">
+                                                <a href="" target="_blank" id="iphone_btn1_link">
+                                                    <button class="btn" id="iphone_btn1"></button>
+                                                </a>
+                                                <a href="" target="_blank" id="iphone_btn2_link">
+                                                    <button class="btn" id="iphone_btn2"></button>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7 col-md-pull-5" id="new-design-upload-design-section">
+                                <!-- Start Finsh Form Result -->
+                                <div id="finishFormResult">
+                                    <div>
+                                        <span>Name:</span>
+                                        <span id="nameResult"></span>
+                                    </div>
+                                    <div>
+                                        <span>Place:</span>
+                                        <span id="placeResult"></span>
+                                    </div>
+                                    <div>
+                                        <span>Trigger:</span>
+                                        <span id="triggerResult"></span>
+                                    </div>
+                                    <div>
+                                        <span>Profile:</span>
+                                        <span id="profileResult"></span>
+                                    </div>
+                                    <div>
+                                        <span>Time Frime:</span>
+                                        <span id="timeFrimeResult"></span>
+                                    </div>
+                                    <div>
+                                        <span>Compaign Start Time:</span>
+                                        <span id="startTimeResult"></span>
+                                    </div>
+                                    <div>
+                                        <span>Compaign End Time:</span>
+                                        <span id="endTimeResult"></span>
+                                    </div>
+                                </div>
+                                <!-- End Finsh Form Result -->
+                                <!-- Start Design Secton -->
+                                <div id="designSection">
+                                    <button class="btn btn-default new-design focus">New Design</button>
+                                    <button class="btn btn-default upload-design">Upload Design</button>
+                                    <!-- New Design Section -->
+                                    <div id="new-design-section">
+                                        <!-- Start Background Section -->
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="container-btn">
+                                                    <button class="btn btn-default" id="background-btn">BackGround</button>
+                                                </div>
+                                                <div class="angle-down" id="background-angle-down">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </div>
+                                                <div class="angle-up" id="background-angle-up">
+                                                    <i class="fas fa-angle-up"></i>
+                                                </div>
+                                                <div id="background-section">
+                                                    <span id="background-type"> BackGround Type</span>
+                                                    <div class="radio">
+                                                        <label class="radioContainer">
+                                                            <input type="radio" name="optradio" id="color" />Color
+                                                            <span class="circle"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio ">
+                                                        <label class="radioContainer">
+                                                            <input type="radio" name="optradio" id="gradient" />Gradient
+                                                            <span class="circle"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label class="radioContainer">
+                                                            <input type="radio" name="optradio" id="image" />Image
+                                                            <span class="circle"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div id="background-color-picker">
+                                                        <span class="color picker-text">Color Picker</span>
+                                                        <input type="color" id="background-color-picker-interface" name="color" value="#2b353f" />
+                                                    </div>
+                                                    <div id="background-gradient">
+                                                        <span class="color gradient-text-left">Left Side Color</span>
+                                                        <span class="color gradient-text-right">Right Side Color</span>
+                                                        <div>
+                                                            <input type="color" id="background-gradient-left" name="color" value="#2b353f" />
+                                                            <input type="color" id="background-gradient-right" name="color" value="#1d2024" />
+                                                        </div>
+                                                    </div>
+                                                    <div id="background-image">
+                                                        <span class="background-image-text">Image</span>
+                                                        <div class="upload-btn-wrapper">
+                                                            <button class="btn btnFile">Upload a file</button>
+                                                            <input type="file" id="imgUpload" name="imgUpload" />
+                                                            <div id="imagePreview"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Background Section -->
+                                        <!-- Start Header Section -->
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="container-btn">
+                                                    <button class="btn btn-default" id="header-btn">Header</button>
+                                                </div>
+                                                <div class="angle-down" id="header-angle-down">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </div>
+                                                <div class="angle-up" id="header-angle-up">
+                                                    <i class="fas fa-angle-up"></i>
+                                                </div>
+                                                <div id="header-section">
+                                                    <!-- Header Type -->
+                                                    <div id="header_type">
+                                                        <span id="header_type_text">Header Type</span>
+                                                        <div class="radio">
+                                                            <label class="radioContainer">
+                                                                <input type="radio" name="optradio" id="round_shape" />Round Shape
+                                                                <span class="circle"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="radio">
+                                                            <label class="radioContainer">
+                                                                <input type="radio" name="optradio" id="rectangular_shape" />Rectangular Shape
+                                                                <span class="circle"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Header Color -->
+                                                    <div id="header_color">
+                                                        <span id="header_color_text">Header Color</span>
+                                                        <input type="color" id="header-color-picker-interface" name="color" value="#347ce3" />
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <!-- Header Text -->
+                                                    <div id="header_text">
+                                                        <span id="header_text_text">Header text</span>
+                                                        <input type="text" id="header-text-input" class="form-control" placeholder="Special Offers" />
+                                                    </div>
+                                                    <!-- Header Text Color -->
+                                                    <div id="header_text_color">
+                                                        <span id="header_text_color_text">Header Color</span>
+                                                        <br/>
+                                                        <input type="color" id="header-text-color-picker-interface" name="color" value="#ffffff" />
+                                                    </div>
+                                                    <!-- Header Text type -->
+                                                    <div id="header_text_type">
+                                                        <span id="header_text_type">Header Type</span>
+                                                        <br/>
+                                                        <select class="form-control" id="header-text-type-dl" required>
+                                                            <option value="Ubuntu">Ubuntu</option>
+                                                            <option value="sans-serif"> sans-serif </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Header Section -->
+                                        <!-- Start Content Section -->
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="container-btn">
+                                                    <button class="btn btn-default" id="content-btn">Content</button>
+                                                </div>
+                                                <div class="angle-down" id="content-angle-down">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </div>
+                                                <div class="angle-up" id="content-angle-up">
+                                                    <i class="fas fa-angle-up"></i>
+                                                </div>
+                                                <div id="content-section">
+                                                    <!-- Content Buttons -->
+                                                    <div id="content_buttons">
+                                                        <button class="btn btn-default btn-circle" id="content-btn-1">1</button>
+                                                        <button class="btn btn-default btn-circle" id="content-btn-2">2</button>
+                                                    </div>
+                                                    <!-- content-section-btn-1 -->
+                                                    <div id="content-section-btn-1">
+                                                        <!-- Content Text -->
+                                                        <div id="content_text-1">
+                                                            <span class="content_text_text">Header text</span>
+                                                            <input type="text" id="content-text-input-1" class="form-control" placeholder="Special Offers" />
+                                                        </div>
+                                                        <!-- Content Text Color -->
+                                                        <div id="content_text_color-1">
+                                                            <span id="content_text_color_text">Header Color</span>
+                                                            <br/>
+                                                            <input type="color" id="content-text-color-picker-interface-1" name="color" value="#347ce3" />
+                                                        </div>
+                                                        <!-- Content Text type -->
+                                                        <div id="content_text_type-1">
+                                                            <span id="content_text_type-1">Header Type</span>
+                                                            <br/>
+                                                            <select class="form-control" id="content-text-type-dl-1" required>
+                                                                <option value="Ubuntu">Ubuntu</option>
+                                                                <option value="sans-serif"> sans-serif </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <!-- content-section-btn-2 -->
+                                                    <div id="content-section-btn-2">
+                                                        <!-- Content Text -->
+                                                        <div id="content_text-2">
+                                                            <span class="content_text_text">Header text</span>
+                                                            <input type="text" id="content-text-input-2" class="form-control" placeholder="Nike Store Special Offers" />
+                                                        </div>
+                                                        <!-- Content Text Color -->
+                                                        <div id="content_text_color-2">
+                                                            <span id="content_text_color_text">Header Color</span>
+                                                            <br/>
+                                                            <input type="color" id="content-text-color-picker-interface-2" name="color" value="#ffffff" />
+                                                        </div>
+                                                        <!-- Content Text type -->
+                                                        <div id="content_text_type-2">
+                                                            <span id="content_text_type-2">Header Type</span>
+                                                            <br/>
+                                                            <select class="form-control" id="content-text-type-dl-2" required>
+                                                                <option value="Ubuntu">Ubuntu</option>
+                                                                <option value="sans-serif"> sans-serif </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Buttons Section -->
+                                        <!-- Start Product Section -->
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="container-btn">
+                                                    <button class="btn btn-default" id="product-btn">Product</button>
+                                                </div>
+                                                <div class="angle-down" id="product-angle-down">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </div>
+                                                <div class="angle-up" id="product-angle-up">
+                                                    <i class="fas fa-angle-up"></i>
+                                                </div>
+                                                <div id="product-section">
+                                                    <!-- Product Type -->
+                                                    <span id="Product-type-text"> Choose Type</span>
+                                                    <br/>
+                                                    <a id="Product-type-1">
+                                                        <img src="img/product-type1.png" />
+                                                    </a>
+                                                    <a id="Product-type-2">
+                                                        <img src="img/product-type2.png" />
+                                                    </a>
+                                                    <a id="Product-type-3">
+                                                        <img src="img/product-type3.png" />
+                                                    </a>
+                                                    <!-- Product Image -->
+                                                    <div id="product-image">
+                                                        <span class="product-image-text">Image</span>
+                                                        <div class="upload-btn-wrapper">
+                                                            <button class="btn btnFile">Upload a file</button>
+                                                            <input type="file" id="product-imgUpload" name="imgUpload" />
+                                                            <div id="product-imagePreview"></div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Product Name -->
+                                                    <div id="product_text">
+                                                        <span id="product_text_text">Product Name</span>
+                                                        <input type="text" id="product-text-input" class="form-control" placeholder="Nike Air BomTok" />
+                                                    </div>
+                                                    <!-- Product Text Color -->
+                                                    <div id="product_text_color">
+                                                        <span id="product_text_color_text">Text Color</span>
+                                                        <br/>
+                                                        <input type="color" id="product-text-color-picker-interface" name="color" value="#97aec3" />
+                                                    </div>
+                                                    <!-- Product Text type -->
+                                                    <div id="product_text_type">
+                                                        <span id="product_text_type">Text Type</span>
+                                                        <br/>
+                                                        <select class="form-control" id="product-text-type-dl" required>
+                                                            <option value="Ubuntu">Ubuntu</option>
+                                                            <option value="sans-serif"> sans-serif </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <!-- Price Name -->
+                                                    <div id="product_price">
+                                                        <span id="product_price_text">Product Price</span>
+                                                        <input type="text" id="product-price-input" class="form-control" placeholder="$77" />
+                                                    </div>
+                                                    <!-- Product Price Text Color -->
+                                                    <div id="product_price_text_color">
+                                                        <span id="product_price_text_color_text">Text Color</span>
+                                                        <br/>
+                                                        <input type="color" id="product-price-text-color-picker-interface" name="color" value="#ffffff" />
+                                                    </div>
+                                                    <!-- Product Price Text type -->
+                                                    <div id="product_price_text_type">
+                                                        <span id="product_price_text_type">Text Type</span>
+                                                        <br/>
+                                                        <select class="form-control" id="product-price-text-type-dl" required>
+                                                            <option value="Ubuntu">Ubuntu</option>
+                                                            <option value="sans-serif"> sans-serif </option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                    <!-- Product Circle Color -->
+                                                    <div id="product_circle_color">
+                                                        <span id="product_circle_color_text">Circle Color</span>
+                                                        <br/>
+                                                        <input type="color" id="product-circle-color-picker-interface" name="color" value="#347ce3" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Product Section -->
+                                        <!-- Start Buttons Section -->
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="container-btn">
+                                                    <button class="btn btn-default" id="buttons-btn">Buttons</button>
+                                                </div>
+                                                <div class="angle-down" id="buttons-angle-down">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </div>
+                                                <div class="angle-up" id="buttons-angle-up">
+                                                    <i class="fas fa-angle-up"></i>
+                                                </div>
+                                                <div id="buttons-section">
+                                                    <button class="btn btn-default btn-circle" id="buttons-btn-1">1</button>
+                                                    <button class="btn btn-default btn-circle" id="buttons-btn-2">2</button>
+                                                    <div class="row">
+                                                        <div id="btn-type" class="col-xs-3">
+                                                            <span>Button Type</span>
+                                                            <div class="radio">
+                                                                <label class="radioContainer">
+                                                                    <input type="radio" name="optradio" id="open-url" />Open URL
+                                                                    <span class="circle"></span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="radio">
+                                                                <label class="radioContainer">
+                                                                    <input type="radio" name="optradio" id="play-video" />Play Video
+                                                                    <span class="circle"></span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div id="btn-info" class="col-xs-9">
+                                                            <div id="btn-info-1">
+                                                                <!-- Button Color -->
+                                                                <div id="button_color">
+                                                                    <span id="button_color_text">Button Color</span>
+                                                                    <input type="color" id="button-color-picker-interface" name="color" value="#347ce3" />
+                                                                </div>
+                                                                <!-- Open URL & YouTube Link -->
+                                                                <div id="URL-link">
+                                                                    <span id="URL-link_text">URL or YouTube Link</span>
+                                                                    <input type="text" id="URL-link-input" class="form-control" placeholder="v=kshIWIc15yg" />
+                                                                </div>
+                                                                <!-- Button Text -->
+                                                                <div id="button_text">
+                                                                    <span id="button_text_text">text</span>
+                                                                    <input type="text" id="button-text-input" class="form-control" placeholder="More Info" />
+                                                                </div>
+                                                                <!-- Button Text Color -->
+                                                                <div id="button_text_color">
+                                                                    <span id="button_text_color_text">Text Color</span>
+                                                                    <input type="color" id="button-text-color-picker-interface" name="color" value="#ffffff" />
+                                                                </div>
+                                                            </div>
+                                                            <div id="btn-info-2">
+                                                                <!-- Button Color -->
+                                                                <div id="button_color-2">
+                                                                    <span id="button_color_text-2">Button Color</span>
+                                                                    <input type="color" id="button-color-picker-interface-2" name="color" value="#347ce3" />
+                                                                </div>
+                                                                <!-- Open URL & YouTube Link -->
+                                                                <div id="URL-link-2">
+                                                                    <span id="URL-link_text-2">URL</span>
+                                                                    <input type="text" id="URL-link-input-2" class="form-control" placeholder="v=kshIWIc15yg" />
+                                                                </div>
+                                                                <!-- Button Text -->
+                                                                <div id="button_text-2">
+                                                                    <span id="button_text_text-2">text</span>
+                                                                    <input type="text" id="button-text-input-2" class="form-control" placeholder="More Info" />
+                                                                </div>
+                                                                <!-- Button Text Color -->
+                                                                <div id="button_text_color-2">
+                                                                    <span id="button_text_color_text-2">Text Color</span>
+                                                                    <input type="color" id="button-text-color-picker-interface-2" name="color" value="#ffffff" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Buttons Section -->
+                                    </div>
+                                    <!-- Start Upload Design -->
+                                    <div id="design-image">
+                                        <span class="design-image-text">Upload Design</span>
+                                        <div class="upload-btn-wrapper">
+                                            <button class="btn btnFile">Upload a file</button>
+                                            <input type="file" id="design-imgUpload" name="imgUpload" />
+                                        </div>
+                                    </div>
+                                    <!-- End Upload Design -->
+                                </div>
+                                <!-- End Design Secton -->
+                            </div>
+                        </div>
+                        <!-- End Design row-->
+
+                        <!-- Start footer section of step 2-->
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <button class="btn btn-default" id="back">Back</button>
+                            </div>
+                            <div class="col-xs-6">
+                                <button class="btn btn-default" id="finish">Finish</button>
+                            </div>
+                        </div>
+                        <!-- End footer section of step 2-->
+                    </div>
+                </div>
+                <!-- End Step 2 (Design) Section -->
+            </div>
+        </div>
+        <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap DatePicker Core JavaScript-->
+    <script src="js/bootstrap-datepicker.js"></script>
+    <!-- Custom js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
