@@ -2,8 +2,6 @@
 
 html,body {
     background-color: #fff;
-    max-width: 110%;
-    overflow-x: hidden;
 }
 
 @media(max-width:768px) {
@@ -571,7 +569,7 @@ html,body {
         text-align: center;
     }
     .progress-bar-steps #progress-bar-step1-img img, .progress-bar-steps #progress-bar-step2-img img{
-        max-width: 290px;
+        max-width: 280px;
     }
 }
 
@@ -615,6 +613,11 @@ html,body {
     border: none;
     border-radius: 0;
     height: 50px;
+}
+@media(max-width:995px){
+    #form-section .form-control{
+        height: 40px;
+    }
 }
 
 #form-section input[type="text"]::placeholder{ 
@@ -771,6 +774,12 @@ html,body {
 #design-section .new-design , #design-section .upload-design{
     padding: 15px 25px;
 }
+@media(max-width:400px){
+    #design-section .new-design , #design-section .upload-design{
+        padding: 15px;
+    }
+}
+
 
 #design-section .new-design , #design-section .upload-design , 
 #new-design-section #background-btn , #new-design-section #header-btn ,
