@@ -30,7 +30,6 @@ html,body {
     padding-left: 0;
 }
 
-
 @media(min-width:768px) {
     #wrapper {
         padding-left: 225px;
